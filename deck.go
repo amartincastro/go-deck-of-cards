@@ -6,8 +6,11 @@ import "fmt"
 
 type deck []string
 
-func newDeck() {
+func newDeck() deck {
+	cards := deck{}
 
+	cardSuits := []string{"Spades", "Diamonds", "Hearts", "Clubs"}
+	cardValues := []string{"Ace", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Jack", "Queen", "King"}
 }
 
 func (d deck) print() {

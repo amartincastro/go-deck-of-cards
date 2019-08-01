@@ -9,7 +9,7 @@ func main() {
 
 	// hand.print()
 	// remainingCards.print()
+	cards := newDeck()
+	fmt.Println(cards.toString())
 
-	greeting := "Hi there!"
-	fmt.Println([]byte(greeting))
 }

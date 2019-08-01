@@ -25,3 +25,7 @@ func (d deck) print() {
 		fmt.Println(i, card)
 	}
 }
+
+func deal(d deck, handSize int) (deck, deck) {
+	return d[:handSize], d[handSize:] //retrn everything from the start of the slice to the handSize, and then return a separate slice with everythng in the deck from the hand size to the very end
+}

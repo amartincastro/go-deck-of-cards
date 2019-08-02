@@ -11,5 +11,4 @@ func main() {
 	// remainingCards.print()
 	cards := newDeck()
 	fmt.Println(cards.toString())
-
 }

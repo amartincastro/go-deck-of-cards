@@ -61,7 +61,7 @@ func newDeckFromFile(filename string) deck {
 }
 
 func (d deck) shuffle() { // loop through entire slice of cards one time. for each index in that slice (each card), generate a random number between 0 and maximum length of card slice, take the current card and swap it with the card that is present at the random number in the slice
-	source := rand.NewSource(time.Now().UnixNano) // seed value for random number generator
+	source := rand.NewSource(time.Now().UnixNano()) // seed value for random number generator
 	r := rand.New(source)
 
 	for i := range d {

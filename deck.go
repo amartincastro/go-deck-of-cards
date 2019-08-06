@@ -58,6 +58,6 @@ func newDeckFromFile(filename string) deck {
 	return deck(s)
 }
 
-func shuffleDeck(filename string) deck {
+func shuffleDeck(filename string) deck { // loop through entire slice of cards one time. for each index in that slice (each card), generate a random number between 0 and maximum length of card slice, take the current card and swap it with the card that is present at the random number in the slice
 
 }
